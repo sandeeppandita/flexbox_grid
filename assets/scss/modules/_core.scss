@@ -1,0 +1,181 @@
+//
+// Grid UI
+// --------------------------------------------------
+//
+
+
+//
+// Basic elements
+//
+html,body{
+    font-family: $font-family;
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+    margin: 0;
+    padding: 0;
+}
+
+
+//
+// Helpers
+//
+@include spacer(20);
+@include spacer(60);
+
+
+//
+// Grid UI - colors, borders etc
+//
+// Fluid container
+.container-fluid{
+    position: relative;
+    border-left: 1px solid #ed8d8d;
+    border-right: 1px solid #ed8d8d;
+
+    &:before {
+        content: "100%";
+        font-size: 8px;
+        position: absolute;
+        top: -10px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    .scr-size{
+        position: absolute;
+        top: -10px;
+        right: 0;
+        font-size: 8px;
+    }
+}
+// Fixed container
+.container{
+    position: relative;
+    border-left: 1px solid #ed8d8d;
+    border-right: 1px solid #ed8d8d;
+
+    &:before {
+        content: "";
+        font-size: 8px;
+        position: absolute;
+        top: -10px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    .scr-size{
+        position: absolute;
+        top: -10px;
+        right: 0;
+        font-size: 8px;
+    }
+}
+// Grid row
+.row > {
+    [class*='col-lg'],
+    [class*='col-md'],
+    [class*='col-sm']{
+        margin-bottom: 10px;
+    }
+
+    [class*='col-']{
+        background-color: $column-bg;
+
+        .content{
+            position: relative;
+            box-sizing: border-box;
+            min-height: 30px;
+            background: $content-bg;
+            border-radius: 0px;
+            overflow: hidden;
+            text-align: center;
+            color: $text-color;
+            width: 100%;
+            padding: 10px;
+            /* border: 1px solid #dff1f9; */
+        }
+
+    }
+}
+
+
+//
+// Media queries
+//
+// small screens
+@media (min-width: $screen-sm) {
+    .container:before {
+        content: "#{$container-sm}";
+    }
+
+    .row > {
+        [class*='col-lg'],
+        [class*='col-md'],
+        [class*='col-sm']{
+            margin-bottom: 10px;
+        }
+    }
+}
+// medium screens
+@media (min-width: $screen-md) {
+    .container:before {
+        content: "#{$container-md}";
+    }
+}
+// large screens
+@media (min-width: $screen-lg) {
+    .container:before {
+        content: "#{$container-lg}";
+    }
+
+    .row > {
+        [class*='col-lg'],
+        [class*='col-md'],
+        [class*='col-sm']{
+            margin-bottom: 0px;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

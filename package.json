@@ -1,0 +1,21 @@
+{
+  "name": "flexbox-grid",
+  "version": "1.0.0",
+  "description": "A 12 column grid based on flexbox css display property",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  },
+  "keywords": [
+    "grid",
+    "flexbox",
+    "sandeep",
+    "coverfox"
+  ],
+  "author": "sandeep pandita",
+  "license": "ISC"
+}

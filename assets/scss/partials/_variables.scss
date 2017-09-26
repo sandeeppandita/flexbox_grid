@@ -1,0 +1,65 @@
+//
+// Variables
+// --------------------------------------------------
+//
+
+
+//
+// Grid Colors
+//
+$body-bg:               #fdfdfd;
+$text-color:               #888888;
+$column-bg:             #f0f0f0;
+$content-bg:            #dddddd;
+
+
+//
+// Typograhpy
+//
+$font-family:           'tahoma', Arial, sans-serif;
+$font-size-base:        14px;
+$font-weight-base:        14px;
+
+
+//
+// Grid
+//
+// Number of columns in a grid
+$grid-columns:          12px !default;
+// Gutter width, space between columns
+$grid-gutter-width:     30px !default;
+
+
+//
+// Container widths
+//
+// Large screen
+$container-lg:          (1140px + $grid-gutter-width) !default;
+// Medium screen
+$container-md:          (940px + $grid-gutter-width) !default;
+// Small screen
+$container-sm:          (720px + $grid-gutter-width) !default;
+
+
+//
+// Media queries breakpoints
+//
+// large screens
+$screen-lg:             1200px;
+// medium screens
+$screen-md:             992px;
+// small screens
+$screen-sm:             768px;
+// mobile screens
+$screen-xs:             480px;
+
+
+
+
+
+
+
+
+
+
+

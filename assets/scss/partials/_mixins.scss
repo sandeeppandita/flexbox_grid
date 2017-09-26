@@ -1,0 +1,15 @@
+// _mixins.scss
+
+//
+// create space between dom elements
+//
+
+@mixin spacer($height) {
+    .spacer-#{$height}{
+        height: $height+px;
+    }
+}
+
+
+
+
