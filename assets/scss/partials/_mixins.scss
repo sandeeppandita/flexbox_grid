@@ -10,6 +10,34 @@
     }
 }
 
+@mixin init-grid-columns($class) {
+    $classes: ".col-#{$class}";
+    @for $i from 1 through $grid-columns {
+        $classes: "#{$classes}, .col-#{$class}-#{$i}";
+    }
+    #{$classes} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: auto;
+    }
+}
+
+@mixin generate-grid-column-width($class) {
+
+    .col-#{$class}{ flex: 1; }
+
+    @for $i from 1 through $grid-columns {
+        .col-#{$class}-#{$i}{
+            flex-basis: percentage(($i / $grid-columns));
+        }
+    }
+}
+
+
+
+
+
 
 
 

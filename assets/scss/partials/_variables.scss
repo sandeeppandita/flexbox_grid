@@ -8,7 +8,7 @@
 // Grid Colors
 //
 $body-bg:               #fdfdfd;
-$text-color:               #888888;
+$text-color:            #888888;
 $column-bg:             #f0f0f0;
 $content-bg:            #dddddd;
 
@@ -25,7 +25,7 @@ $font-weight-base:        14px;
 // Grid
 //
 // Number of columns in a grid
-$grid-columns:          12px !default;
+$grid-columns:          12 !default;
 // Gutter width, space between columns
 $grid-gutter-width:     30px !default;
 
